@@ -1,0 +1,237 @@
+/** BASE STYLES **/
+
+body {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+header {
+  font-family: 'Source Code Pro', monospace;
+  height: 54px;
+  margin: 0 auto;
+}
+
+#feature-image,
+#about {
+  height: 500px;
+  margin: 0 auto;
+}
+
+#portfolio {
+  background-color: black;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+#about {
+  clear: both;
+}
+
+#contact {
+  height: 300px;
+  margin: 0 auto;
+}
+
+/** GRID **/
+
+.full-width {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.half-width {
+  width: 600px;
+  margin: 0 auto;
+  float: left;
+}
+
+.third-width {
+  width: 400px;
+  margin: 0 auto;
+  float: left;
+}
+
+/** HEADER **/
+
+header h1 {
+  font-size: 18px;
+  color: white;
+  padding: 2px 0 10px 25px;
+}
+
+.rainbow-text {
+  letter-spacing: 2px;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+nav {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 0 0 10px 25px;
+}
+
+/** FEATURE IMAGE **/
+
+#feature-image {
+  background: url('../img/hero-background.png');
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#feature-text {
+  width: 500px;
+  margin-left: 80px;
+}
+
+#feature-text h2 {
+  display: inline-block;
+  font-family: 'Source Code Pro', monospace;
+  color: #00ffff;
+  font-size: 72px;
+  text-align: center;
+  margin-left: 55px;
+}
+
+#feature-image span {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+
+/** PORTFOLIO **/
+
+h3 {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#top-row {
+  margin: 0;
+  margin-top: 50px;
+  margin-left: 35px;
+  overflow: auto;
+}
+
+#top-row a {
+  display: block;
+  padding-right: 20px;
+}
+
+.overlay-container {
+  position: relative;
+  width: 350px;
+  border-radius: 50%;
+  border: 5px groove #00ffff;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  float: left;
+}
+
+.site-image {
+  display: block;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #00ffff;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+    color: #004d4d;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+/** ABOUT **/
+
+#about {
+  background: url('../img/about.png');
+  background-size: cover;
+  margin: 0 auto;
+}
+
+#about-text {
+  margin-top: 20px;
+  margin-left: 80px;
+  color: #004d4d;
+  font-weight: 700;
+}
+
+/** CONTACT **/
+
+#contact h4,
+#contact p {
+  text-align: center;
+}
+
+h4 {
+  color: #00ffff;
+}
+
+#contact ul li {
+  display: inline-block
+}
+
+#contact ul li a {
+  padding: 0 0 10px 70px;
+}
+
+#meet-me iframe {
+  width: 350px;
+  height: 75px;
+  margin-left: 20px;
+}
+
+
+/** FOOTER **/
+
+footer p {
+  text-align: center;
+}
