@@ -198,10 +198,11 @@ h3 {
 }
 
 #about-text {
-  margin-top: 20px;
-  margin-left: 80px;
   color: #004d4d;
   font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-left: 80px;
 }
 
 /** CONTACT **/
